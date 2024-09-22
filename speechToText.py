@@ -29,12 +29,12 @@ translator = Translator()
 # English text to translate
 
 # Translate into Hindi
-translated = translator.translate(text, src='en', dest='hi')
+translated = translator.translate(text, src='hi', dest='ja')
 
 # Print the translated text
 print("Translated text:", translated.text)
 
-language = 'hi'
-speech = gTTS(text=translated.text, lang=language, slow=True)
+language = 'ja'
+speech = gTTS(text=translated.text, lang=language, slow=False)
 speech.save("output.mp3")
 os.system("start output.mp3")
