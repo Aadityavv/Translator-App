@@ -35,6 +35,6 @@ translated = translator.translate(text, src='en', dest='hi')
 print("Translated text:", translated.text)
 
 language = 'hi'
-speech = gTTS(text=translated.text, lang=language, slow=False)
+speech = gTTS(text=translated.text, lang=language, slow=True)
 speech.save("output.mp3")
 os.system("start output.mp3")
