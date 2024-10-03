@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-to-Text Translator (Whisper)</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Speech-to-Text Translator (Whisper)</h1>
+
+        <!-- Language Selection -->
+        <label for="sourceLanguageSelect">From:</label>
+        <select id="sourceLanguageSelect">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="bn">Bengali</option>
+            <option value="ja">Japanese</option>
+            <option value="de">German</option>
+            <option value="ur">Urdu</option>
+            <option value="it">Italian</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+            <option value="ar">Arabic</option>
+        </select>
+
+        <label for="targetLanguageSelect">To:</label>
+        <select id="targetLanguageSelect">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="bn">Bengali</option>
+            <option value="ja">Japanese</option>
+            <option value="de">German</option>
+            <option value="ur">Urdu</option>
+            <option value="it">Italian</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+            <option value="ar">Arabic</option>
+        </select>
+
+        <!-- Text Input -->
+        <div class="text-box">
+            <textarea id="textContent" placeholder="Write your text here or use the mic to record audio..."></textarea>
+            <div id="recordBtn" class="mic-icon"><p>🎙️</p></div>
+        </div>
+
+        <p id="recordingStatus" style="display:none;">🎙️ Recording...</p>
+
+        <!-- Submit Button to send the text -->
+        <button id="submitTextBtn">Submit Text</button>
+
+        <p id="translatedText">Your translation will appear here...</p>
+
+        <!-- Audio Player -->
+        <audio id="audioPlayer" controls></audio>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
