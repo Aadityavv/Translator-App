@@ -8,7 +8,7 @@ body {
     height: 100vh;
     margin: 0;
     overflow-x: hidden;
-    overflow-y:visible;
+    overflow-y: scroll;
     cursor: none;
 }
 
