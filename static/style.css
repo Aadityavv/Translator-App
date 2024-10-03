@@ -1,25 +1,32 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000; /* Set the background to black */
-    color: #ffffff; /* Text color to white */
+    background-color: #000000;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    cursor: none;
 }
 
 .container {
-    background-color: #1e1e1e; /* Slightly lighter dark background */
-    padding: 20px;
-    border-radius: 15px;
+    background-color: #1e1e1e;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    /* padding-bottom: 20px; */
+    border-radius: 5%;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 400px;
+    cursor:auto;
 }
 
 h1 {
-    color: #00ccff; /* Change heading color to cyan for contrast */
+    color: #00ccff;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -29,32 +36,33 @@ button {
     margin-top: 10px;
     font-size: 16px;
     cursor: pointer;
-    color: #ff0000; /* Red text color for buttons */
-    background-color: #000000; /* Black background for buttons */
-    border: 1px solid #ff0000; /* Red border for buttons */
+    color: #ff0000;
+    background-color: #000000;
+    border: 1px solid #ff0000;
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #333333; /* Dark gray background on hover */
+    background-color: #333333;
 }
 
 #translatedText {
     margin-top: 20px;
     font-size: 16px;
-    color: #ffffff; /* Keep text white */
+    color: #ffffff;
 }
 
 select {
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 10px;
-    color: #ff0000; /* Red text color */
-    background-color: #000000; /* Black background */
-    border: 1px solid #ff0000; /* Red border */
+    color: #ff0000;
+    background-color: #000000;
+    border: 1px solid #ff0000;
     border-radius: 5px;
-    width: 100%; /* Make select box fill width */
+    width: 100%;
+    cursor: pointer;
 }
 
 .text-box {
@@ -65,19 +73,18 @@ select {
 #textContent {
     width: 100%;
     height: 100px;
-    background-color: #333333; /* Dark gray background for text area */
+    background-color: #333333;
     color: white;
     border: 1px solid #00509e;
     border-radius: 10px;
-    /* padding: 10px; */
-    resize: none; /* Disable resizing */
+    resize: none;
 }
 
 .mic-icon {
     width: 3vw;
     height: 3vw;
     background-color: #000000;
-    border: 2px solid #ff0000; /* Add red border for mic */
+    border: 2px solid #ff0000;
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
@@ -87,15 +94,14 @@ select {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.mic-icon>p{
+.mic-icon>p {
     margin-top: -3%;
-    /* margin-bottom: 20%; */
     font-size: 2vw;
 }
 
 .mic-icon:hover {
-    background-color: #ff0000; /* Change background to red when hovering */
-    transform: scale(1.1); /* Slight scaling on hover */
+    background-color: #ff0000;
+    transform: scale(1.1);
 }
 
 #mic {
@@ -117,8 +123,20 @@ select {
 }
 
 audio {
-    margin-top: 20px;
+    margin-top: 2vw;
     width: 100%;
-    /* background-color: #000000; */
     border-radius: 10px;
+}
+
+#bgcolor{
+    height: 80%;
+    width: 40%;
+    z-index: -1;
+    background-color: #40a0e5;
+    display: inline-block;
+    border-radius: 100%;
+    filter: blur(200px); 
+    position: absolute; /* Change to absolute positioning */
+    /* animation: rightLeftMotion 3s ease-in-out infinite; */
+    /* overflow: hidden; */
 }
