@@ -132,7 +132,7 @@ audio {
     height: 80%;
     width: 40%;
     z-index: -1;
-    background-color: #40a0e5;
+    background-color: #f9b24f;
     display: inline-block;
     border-radius: 100%;
     filter: blur(200px); 
