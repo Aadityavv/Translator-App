@@ -132,8 +132,8 @@ audio {
 }
 
 #bgcolor{
-    height: 60%;
-    width: 30%;
+    height: 90vh;
+    width: 90vh;
     z-index: -1;
     background-color: #f9b24f;
     display: inline-block;
