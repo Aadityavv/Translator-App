@@ -5,15 +5,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     margin: 0;
     overflow-x: hidden;
     overflow-y: scroll;
     cursor: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .container {
-    background-color: #1e1e1e;
+    background-color: #060606;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 20px;
@@ -126,16 +128,17 @@ audio {
     margin-top: 2vw;
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 5%;
 }
 
 #bgcolor{
-    height: 80%;
-    width: 40%;
+    height: 60%;
+    width: 30%;
     z-index: -1;
     background-color: #f9b24f;
     display: inline-block;
     border-radius: 100%;
-    filter: blur(200px); 
+    filter: blur(180px); 
     position: absolute; /* Change to absolute positioning */
     /* animation: rightLeftMotion 3s ease-in-out infinite; */
     /* overflow: hidden; */
